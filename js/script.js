@@ -1,7 +1,6 @@
 // Parallax effect
 // Adapted from @ilonacodes article ->  https://link.medium.com/7fFiON6Q1X
 
-// Update : added throttle to increase performance
 window.addEventListener('scroll', throttle(parallax, 13));
 
 function throttle(fn, wait) {
