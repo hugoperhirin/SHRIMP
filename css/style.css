@@ -1,40 +1,139 @@
-/* Updated CSS */
+/* Updated CSS with Relative Units */
 :root {
     --primary-color: #d74972;
     /* Define more variables as needed */
 }
 
-/* Reset some default styles for better consistency */
-* {
-    box-sizing: border-box;
-}
+/* press-start-2p-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/press-start-2p-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+
 
 /* Set the background color for the entire body */
 body {
     margin: 0; /* Remove default margin for the body */
     padding: 0; /* Remove default padding for the body */
-    overflow: hidden; /* Prevent horizontal scrollbar from appearing */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Set the body height to 100% of the viewport height */
     background-color: var(--primary-color);
-    background-image: url('/images/shrimpbg1920.png');
-    background-size: 100vh; /* Scale the background image to cover the entire viewport */
+
+    min-height: 100vh;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    font-family: 'Press Start 2P';
 }
 
 header {
-    color: var(--text-color);
+
+}
+
+.navigation-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+
+.navigation-menu ul {
+    padding: 0%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     text-align: center;
 }
+
+.navigation-menu li {
+ flex: 1;
+ text-align: center;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem;
+    height: 100vh;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.parallax-wrapper {
+    overflow-y: hidden;
+      height:80%; 
+      min-width:320px;
+       display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .parallax {
+    background-size: 100%;
+    background-position: left bottom;
+    height:80%;
+    background-repeat:no-repeat;
+    position: absolute;
+    top:0;
+    width:100%;
+    min-width:320px;
+  }
+  
+  #level0 {
+    background-image: url('/images/background-1.png');
+      background-size: cover;
+    background-position: left top;
+    z-index:0;
+  }
+  #level1 {
+    background-image: url('/images/level-1.gif');
+    z-index:1;
+  }
+  #level2 {
+    background-image: url('/images/level-2.gif');
+    z-index:2;
+  }
+  #level3 {
+    background-image: url('/images/level-3.gif');
+    z-index:3;
+  }
+
+.shrimpmoto {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.textshrimp {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.shrimpbg_shrimpcoin img {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shrimpcoin img {
+    display: block;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {
@@ -48,9 +147,24 @@ footer {
 
 /* Add more CSS styles as needed */
 
-/* Media Query for Responsiveness */
+/* CSS for smaller screens (e.g., max-width: 768px) */
 @media screen and (max-width: 768px) {
+    /* Adjust the background size to 'cover' for small screens */
     body {
-        background-size: contain; /* Adjust background size for smaller screens */
+        background-size: cover;
+    }
+
+    /* Decrease the font size of navigation buttons for small screens */
+    .navigation-menu li a {
+        font-size: 1.5rem; /* You can adjust the size as needed */
+    }
+
+    /* Adjust the spacing between navigation buttons for small screens */
+    .navigation-menu ul {
+        justify-content: space-between;
+    }
+
+    .shrimpbg_shrimpcoin img {
+        max-height: 30vh;
     }
 }
