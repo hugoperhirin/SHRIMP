@@ -1,8 +1,4 @@
-/* Updated CSS with Relative Units */
-:root {
-    --primary-color: #d74972;
-    /* Define more variables as needed */
-}
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}td:not([align]),th:not([align]){text-align:left}
 
 /* press-start-2p-regular - latin */
 @font-face {
@@ -15,156 +11,182 @@
 
 
 
-/* Set the background color for the entire body */
-body {
-    margin: 0; /* Remove default margin for the body */
-    padding: 0; /* Remove default padding for the body */
-    background-color: var(--primary-color);
-
-    min-height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    font-family: 'Press Start 2P';
-}
-
-header {
-
-}
-
-.navigation-menu {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-    margin-top: 4rem;
-}
-
-.navigation-menu ul {
-    padding: 0%;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
+  html, body {
+    margin:0;
+    padding:0;
+    height:100%;
     width: 100%;
-    text-align: center;
+    background:#f06292;
+    color:#ffffff;
+    font-family:"Press Start 2P";
+    background:#f06292;
 }
 
-.navigation-menu li {
- flex: 1;
- text-align: center;
+body {
+    overflow-x: hidden; 
+    font-size:16px;
 }
-a {
-    color: white;
-    text-decoration: none;
+p {
+	font-size:1.7em;
+	margin-bottom:1rem;
+}
+.container {
+    height: 100%;
+    position: relative;
+    min-width:320px;
+    z-index:2;
 }
 
+.logo {
+	display:block;
+	text-align:center; 
+	z-index:9999;
+	position:relative;
+ }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    height: 100vh;
-    margin-left: 4rem;
-    margin-right: 4rem;
+
+.logo img{
+	display:block; 
+	margin:auto; 
+	width:42vw; 
+}
+
+.socials {
+position:absolute;
+z-index:5;
+top:10px;
+text-align:center;
+width:100%;
 }
 
 .parallax-wrapper {
-    overflow-y: hidden;
-      height:80%; 
-      min-width:320px;
-       display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .parallax {
-    background-size: 100%;
-    background-position: left bottom;
-    height:80%;
-    background-repeat:no-repeat;
-    position: absolute;
-    top:0;
-    width:100%;
+  overflow-y: hidden;
+    height:80%; 
     min-width:320px;
-  }
-  
-  #level0 {
-    background-image: url('/images/background-1.png');
-      background-size: cover;
-    background-position: left top;
-    z-index:0;
-  }
-  #level1 {
-    background-image: url('/images/level-1.gif');
-    z-index:1;
-  }
-  #level2 {
-    background-image: url('/images/level-2.gif');
-    z-index:2;
-  }
-  #level3 {
-    background-image: url('/images/level-3.gif');
-    z-index:3;
-  }
+     display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 
-.shrimpmoto {
+.parallax {
+  background-size: 100%;
+  background-position: left bottom;
+  height:80%;
+  background-repeat:no-repeat;
+  position: absolute;
+  top:0;
+  width:100%;
+  min-width:320px;
+}
+
+#level0 {
+  background-image: url('/images/background-1.png');
+    background-size: cover;
+  background-position: left top;
+  z-index:0;
+}
+#level1 {
+  background-image: url('/images/level-1.gif');
+  z-index:1;
+}
+#level2 {
+  background-image: url('/images/level-2.gif');
+  z-index:2;
+}
+#level3 {
+  background-image: url('/images/level-3.gif');
+  z-index:3;
+}
+
+.content {
+	/* padding:5rem; */
+	margin:auto;
+	width:100%;
+	position:relative;
+	z-index:99999;
+    background:#f06292;
+}
+
+.content > h2 {
+	margin:auto;
+	padding:1rem 5vw;
+	max-width:1200px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight:bold;
+}
+
+ h2 {
     text-align: center;
-    font-size: 2rem;
-    margin-top: 3rem;
+    text-shadow: 4px;
+    font-weight: lighter;
+	font-size:1.3em;
 }
 
-.textshrimp {
-    font-size: 1rem;
-    line-height: 1.6;
-    text-align: center;
-    margin-top: 3rem;
+.footer {
+	text-align:left;
+	display:block;
+	margin:auto;
+	font-size:1.2em;
+	padding:2rem 5vw;
+	max-width:1200px;
+}
+.footer span {
+	font-family:'Courier New', Courier, monospace; 
+	font-weight:bold;
 }
 
-.shrimpbg_shrimpcoin img {
-    display: block;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+
+/*/ MEDIA QUERIES START HERE //////////////////////////////////////////////////////////////////////////////*/
+
+@media (max-width: 768px) { /* Hand Held Device */
+
+	body {
+	font-size:13px;
+	}
+	.parallax {
+		background-size: 150%;
+	}
+	.logo img{
+		width:60vw; 
+	}
+
+	.content {
+		padding:1rem;
+	}
+	.characters {
+		gap: 1rem;
+	}
+	.character {
+		width: 47%;
+		margin-bottom: 3%;
+		min-width: 200px;
+	}
+
 }
 
-.shrimpcoin img {
-    display: block;
-    width: 20%;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-footer {
-    text-align: center;
-}
-
-/* BEM Naming Convention Example */
-.header-title {
-    font-size: 24px;
-}
-
-/* Add more CSS styles as needed */
-
-/* CSS for smaller screens (e.g., max-width: 768px) */
-@media screen and (max-width: 768px) {
-    /* Adjust the background size to 'cover' for small screens */
-    body {
-        background-size: cover;
+@media (max-width: 524px) { /*  Mobile */
+  .parallax {
+    background-size: 200%;
     }
-
-    /* Decrease the font size of navigation buttons for small screens */
-    .navigation-menu li a {
-        font-size: 1.5rem; /* You can adjust the size as needed */
+    .logo img{
+		width:80vw; 
+	}
+	.characters {
+    	justify-content: center;
     }
+	.character {
+		width: 97%;
+		margin-bottom: 3%;
+		min-width: 200px;
+	}
+}
 
-    /* Adjust the spacing between navigation buttons for small screens */
-    .navigation-menu ul {
-        justify-content: space-between;
-    }
 
-    .shrimpbg_shrimpcoin img {
-        max-height: 30vh;
-    }
+
+@media screen and (min-width: 3240px ) { /* 4K */
+
 }
