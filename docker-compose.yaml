@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web:
+    container_name: shrimp
+    build: .
+    ports:
+      - "3050:80"
+    volumes:
+      - .:/usr/share/nginx/html
+    networks:
+      - shrimp
+
+
+networks:
+    shrimp:
+        driver: bridge
