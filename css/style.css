@@ -9,13 +9,17 @@
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-* {
-  cursor: url('/root/favicon-96x96.png'),auto;
+a > img, .navbar > ul > li > a  {
+  cursor: url('/root/cursorgolden.png'), auto;
 }
 
-a > img, .navbar > ul > li > a  {
-  cursor: url('/root/cursorgolden96.png'), auto;
+.cursor-toggle img {
+  height: auto;
+  cursor: pointer;
+  margin-left: 15em;
+
 }
+
 
 html,
 body {
@@ -257,10 +261,6 @@ footer {
 
   .logo img {
     width: 60vw;
-  }
-
-  .content {
-    
   }
 
   .characters {
