@@ -9,7 +9,8 @@
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-a > img, .navbar > ul > li > a  {
+a>img,
+.navbar>ul>li>a {
   cursor: url('/root/cursorgolden.png'), auto;
 }
 
@@ -76,7 +77,7 @@ p {
 .disabled-link {
   pointer-events: none;
   cursor: default;
-  color: #aaa!important;
+  color: #aaa !important;
 }
 
 .parallax-wrapper {
@@ -287,6 +288,7 @@ footer {
     width: 80vw;
   }
 }
+
 @media screen and (min-width: 3240px) {
   /* 4K */
 

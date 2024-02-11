@@ -1,16 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<link href="/css/style.css" rel="stylesheet">
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-<title>$SHRIMP</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="robots" content="all">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/root/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/root/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/root/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/root/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/root/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/root/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/root/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/root/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/root/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/root/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/root/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/root/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/root/favicon-16x16.png">
+  <link rel="manifest" href="/root/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta name="title" content="$SHRIMP">
+  <meta name="description" content="Meme coin on the Aptos blockchain">
+  <meta name="keywords" content="Memecoin, NFT, Aptomingos, SHRIMP, aptomingos.io, Aptos">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <link href="/css/game.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>$SHRIMP</title>
 </head>
-<div style="width:1280px;height:720px;max-width:100%;margin-left: auto;margin-right: auto;margin-top: 10vh;margin-bottom: 10vh;">
-    <div id="game"></div>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a class="disabled-link" href="#tokenomics">Tokenomics</a></li>
+      <li><a href="/html/reserve.html">The Reserve</a></li>
+      <li><a class="disabled-link" href="#bbq">The Barbecue</a></li>
+      <li><a href="/html/subgoals.html">The Goals</a></li>
+    </ul>
   </div>
-<script type="text/javascript">
-EJS_player = '#game';
-EJS_gameUrl = '../data/SuperShrimpWorldV1.0.smc';
-EJS_core = 'snes';
-EJS_mouse = false; // SNES Mouse
-EJS_multitap = false; // SNES Multitap
-</script>
-<script src="https://www.emulatorjs.com/loader.js"></script>
+  <div class="container">
+    <div class="parallax-wrapper">
+      <!-- <div class="logo">
+        <img src="/images/Shrimplogwhitev2.png">
+      </div> -->
+      <div class="parallax" id="level0"></div>
+      <div class="parallax" id="level1"></div>
+      <div class="parallax" id="level2"></div>
+      <div class="parallax" id="level3"></div>
+    </div>
+    <div class="content">
+      <div class="cursor-toggle">
+        <img src="/root/toggleShrimp.png" alt="Toggle Cursor" id="cursorToggle">
+      </div>
+      <div class="gameborder" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <div style="width:1024px;height:768px;max-width:100%;">
+            <div id="game">
+            </div>
+          <script type="text/javascript">
+            EJS_player = '#game';
+            EJS_gameUrl = '../data/SuperShrimpWorldV3.0.smc';
+            EJS_core = 'snes';
+            EJS_mouse = false; // SNES Mouse
+            EJS_multitap = false; // SNES Multitap
+          </script>
+          <script src="https://www.emulatorjs.com/loader.js"></script><br><br>
+        </div>
+      </div>
+      <footer class="container">
+        <small>(c) Aptomingos</small>
+      </footer>
+      <script src="/js/script.js"></script>
+    </body>
+
+    </html>
