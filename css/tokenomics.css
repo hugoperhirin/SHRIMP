@@ -198,16 +198,101 @@
   
   h3 {
     font-weight: lighter;
-    text-align: center;
+    text-align:left;
     margin: auto;
     padding: 1rem 5vw;
     margin-bottom: 2em;
     max-width: 1200px;
-    font-size: 1.3em;
-    line-height: 1.4em;
+    font-size: 1.2em;
+    line-height: 1.6em;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
   }
   
+  .numbers {
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    padding: 1rem 5vw;
+    max-width: 1200px;
+    border-style: solid;
+    border-radius: 16px;
+    font-size: 1.3em;
+  }
+
+.description {
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+  margin: auto;
+  padding: 5vw;
+  max-width: 1200px;
+  border-style: solid;
+  border-radius: 16px;
+  font-size: 1em;
+}
+
+span.reserve {
+  color:#c691f1;
+}
+
+span.communities {
+  color: #ffb12f;
+}
+span.galxe {
+  color: black
+}
+
+span.dao {
+  color: #00d26a;
+}
+
+span.team {
+  color: #a56852
+}
+span.presale {
+  color: #00a7ec
+}
+span.lp {
+  color: #fb6623
+}
+
+
+
+span.reservedesc {
+  color:#c691f1;
+  text-decoration: underline;
+}
+
+span.collectionsdesc {
+  text-decoration: underline;
+}
+
+span.communitiesdesc {
+  color: #ffb12f;
+  text-decoration: underline;
+}
+span.galxedesc {
+  color: black;
+  text-decoration: underline;
+}
+
+span.daodesc {
+  color: #00d26a;
+}
+
+span.teamdesc {
+  color: #a56852;
+}
+span.presaledesc {
+  color: #00a7ec;
+  text-decoration: underline;
+}
+span.lpdesc {
+  color: #fb6623;
+  text-decoration: underline;
+}
+
+span.daoandteam {
+  text-decoration: underline;
+}
+
   .shrimpgame {
     width: 640px;
     height: 480px;
