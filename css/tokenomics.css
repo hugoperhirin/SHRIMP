@@ -232,7 +232,7 @@ span.reserve {
   color:#c691f1;
 }
 
-span.communities {
+span.community {
   color: #ffb12f;
 }
 span.galxe {
@@ -246,14 +246,21 @@ span.dao {
 span.team {
   color: #a56852
 }
-span.presale {
+span.investors {
   color: #00a7ec
 }
-span.lp {
+span.LP {
   color: #fb6623
 }
 
 
+.communities {
+  font-size: 0.8em;
+}
+
+span.communitiestext {
+  text-decoration: underline;
+}
 
 span.reservedesc {
   color:#c691f1;
@@ -264,7 +271,7 @@ span.collectionsdesc {
   text-decoration: underline;
 }
 
-span.communitiesdesc {
+span.communitydesc {
   color: #ffb12f;
   text-decoration: underline;
 }
@@ -280,7 +287,7 @@ span.daodesc {
 span.teamdesc {
   color: #a56852;
 }
-span.presaledesc {
+span.investorsdesc {
   color: #00a7ec;
   text-decoration: underline;
 }
