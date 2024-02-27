@@ -300,6 +300,31 @@ span.daoandteam {
   text-decoration: underline;
 }
 
+.no-underlinereserve {
+  text-decoration: none;
+  color: #c691f1;
+}
+
+.no-underlinebarbecue {
+  text-decoration: none;
+  color: red;
+}
+
+.no-underlinegalxe {
+  text-decoration: none;
+  color: black;
+}
+
+.no-underlinecb {
+  text-decoration: none;
+  color: gold;
+}
+
+.no-underlinekey {
+  text-decoration: none;
+  color: purple;
+}
+
   .shrimpgame {
     width: 640px;
     height: 480px;
